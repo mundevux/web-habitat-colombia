@@ -18,11 +18,7 @@ export default function Navigationbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = ["Proyectos", "Nosotros", "Contacto"];
   return (
-    <Navbar
-      onMenuOpenChange={setIsMenuOpen}
-      isBlurred={false}
-      className="bg-transparent"
-    >
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-transparent">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -55,7 +51,7 @@ export default function Navigationbar() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className=" bg-slate-300">
+      <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
