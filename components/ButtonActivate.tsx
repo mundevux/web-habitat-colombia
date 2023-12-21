@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const ButtonActivate = ({ text, icon }: ButtonProps) => {
   return (
-    <Button className=" bg-tussock text-white mr-5 mb-5 w-full sm:w-auto text-base lg:text-lg font-normal">
+    <Button className=" bg-tussock text-white text-base lg:text-lg font-normal">
       {text}
       {icon && (
         <Image src={icon} alt="Icono de Flecha" width={16} height={16} />
