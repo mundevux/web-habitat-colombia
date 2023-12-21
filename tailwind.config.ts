@@ -11,7 +11,14 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        tussock: "#B9934A",
+        armadillo: "#3A362D",
+        "well-read": "#B53032",
+        buccaneer: "#702D2C",
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
