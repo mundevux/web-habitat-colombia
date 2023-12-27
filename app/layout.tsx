@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Providers } from "./providers";
+import Navigationbar from "@/components/Navigationbar";
 
 // Supports weights 300-900
 import "@fontsource-variable/rubik";
@@ -18,6 +19,9 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
+        <header className="fixed w-full z-20 top-0 start-0">
+          <Navigationbar />
+        </header>
         <Providers>{children}</Providers>
       </body>
     </html>
